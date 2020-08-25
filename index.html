@@ -7,18 +7,25 @@
         <link rel="stylesheet" href="css/index.css">
     </head>
     <body>
-        <p id="chuckSays">Chuck says....</p>
-        <button type="button" id="refreshQuote">Refresh Quote</button>
-        <form id="getChuckQuotes">
-            <label>
+        <div class="wrapper">
+            <div class="img-wrapper">
+                <img src="image/rawImage.jpg" class="image">
+            </div>
+            <button type="button" id="refreshQuote">Refresh Quote</button>
+            <form id="getChuckQuotes">
+                <label>
                 Choose a Category
-                <select name="categoryInput" id="categoryInput">
-                    
-                </select>
-            </label>
-            
-            <button type="submit" id="submitForm">Get a Quote</button>
-        </form>
+                <select name="categoryInput" id="categoryInput"></select>
+                </label>
+                <button type="submit" id="submitForm">Get a Quote</button>
+            </form>
+        </div>
+        <div class="modal-overlay">
+            <div class="modal-content">
+                <span id="closeModal" class="modal-close">X</span>
+                <p id="chuckSays">Chuck says....</p>
+            </div>
+        </div>
     </body>
     <script src="js/git.js"></script>
     <script src="js/index.js"></script>

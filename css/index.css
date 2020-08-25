@@ -1,4 +1,4 @@
-*, *:before, *::after {
+* {
     box-sizing: border-box;
 }
 
@@ -6,9 +6,55 @@ html {
     background-color: rgb(125, 152, 143);
     font-size: 16px;
 }
+.wrapper {
+    margin: 0 auto;
+    max-width: 60rem;
+    width: 100%;
+}
 
-body {
-    font-size: 2rem;
-    margin: 0;
-    padding: 0;
+.img-wrapper img {
+    height: auto;
+    width: 100%;
+}
+
+.image {
+    border-radius: 25%;
+}
+
+.modal-overlay {
+    background-color: rgb(0, 0, 0, 0.7);
+    bottom: 0;
+    display: none;
+    left: 0;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    position: absolute;
+    width: 100vw;
+    z-index: 9999;
+}
+
+.modal-overlay.open {
+    display: flex;
+}
+
+.modal-content {
+    background-color: #efefef;
+    border-radius: 6px;
+    margin: auto;
+    max-width: 400px;
+    padding: 8px;
+    position: relative;
+    z-index: 10000;
+}
+
+.modal-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: rgb(125, 152, 143);
+    padding: 4px;
+    border-radius: 50%;
+    color: #efefef;
+    font-size: 10px;
 }
